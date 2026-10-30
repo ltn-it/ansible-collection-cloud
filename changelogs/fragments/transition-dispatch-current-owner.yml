@@ -1,0 +1,3 @@
+---
+bugfixes:
+  - Preserve current ltn-it Collection identities when dispatching the post-publication transition check.
