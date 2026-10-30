@@ -10,7 +10,10 @@ import re
 import subprocess
 from pathlib import PurePath
 
-REPOSITORY_RE = re.compile(r"lightning-it/ansible-collection-[a-z0-9-]+\Z")
+REPOSITORY_RE = re.compile(
+    r"(?:ltn-it|lightning-it)/ansible-collection-"
+    r"(?:foundational|supplementary|rhel|ubuntu|ocp|cloud)\Z"
+)
 SHA_RE = re.compile(r"[0-9a-f]{40}\Z")
 DIGEST_RE = re.compile(r"[0-9a-f]{64}\Z")
 VERSION_CORE_RE = re.compile(
@@ -23,7 +26,7 @@ ARTIFACT_RE = re.compile(
     r"[a-z0-9_]+-[a-z0-9_]+-[0-9A-Za-z.-]+\.tar\.gz\Z"
 )
 WORKFLOW_ENDPOINT = (
-    "repos/lightning-it/modulix-validation/actions/workflows/"
+    "repos/ltn-it/modulix-validation/actions/workflows/"
     "collection-release-transition.yml/dispatches"
 )
 
