@@ -60,3 +60,11 @@ releases:
       - shared-assets-sync-36752940932.yml
       - shared-assets-sync.yml
     release_date: '2026-10-30'
+  1.2.0:
+    changes:
+      bugfixes:
+        - Preserve current ltn-it Collection identities when dispatching the post-publication
+          transition check.
+    fragments:
+      - transition-dispatch-current-owner.yml
+    release_date: '2026-10-30'

@@ -4,6 +4,14 @@ Lightning IT Collection Release Notes Release Notes
 
 .. contents:: Topics
 
+v1.2.0
+======
+
+Bugfixes
+--------
+
+- Preserve current ltn-it Collection identities when dispatching the post-publication transition check.
+
 v1.1.0
 ======
 
